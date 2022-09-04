@@ -1,14 +1,7 @@
 
-function scr_ds(){
+function scr_ds(grd,size,high,roughness,chng){
 //(var to store grid, exponent of map size, height range, roughness, roughness change factor)
-
-var grd = argument0;
 if ds_exists(grd,ds_type_grid)  ds_grid_destroy(grd);
-
-var size = argument1;
-var high = argument2;
-var roughness = argument3;
-var chng = argument4;
 
 var i,z;
 var chunk = (size-1); //size of the piece you are working with (-1 so it can be halfed)

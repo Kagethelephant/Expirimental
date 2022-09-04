@@ -25,15 +25,8 @@ h_chg = 1.5; //amount the change decreases on every iteration of the diamond squ
 h_rng = 20;//the range for random values in the diamond square algorithm
 h_ruf = 30;
 
-m_chg = 1.3; 
-m_rng = 15;
-m_ruf = 30;
-
 height_map = ds_grid_create(1,1);
-scr_ds(height_map,grid_size,h_rng,h_ruf,h_chg);//diamond square algorithm for height map
-moist_map = ds_grid_create(grid_size,grid_size);
-ds_grid_clear(moist_map,0);
-//scr_ds(moist_map,pwr,m_rng,m_ruf,m_chg);//diamond square algorithm for dynamic moisture
+scr_ds(height_map,grid_size,h_rng,h_ruf,h_chg);//diamond square algorithm for 
 
 
 

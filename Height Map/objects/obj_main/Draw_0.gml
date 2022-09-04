@@ -21,7 +21,6 @@ if init //draw to surface only once for each change
 			zn = z*bx; //multiply the step by the size of the box in pixels for drawing
 			
 			var h = height_map[# i,z];
-			var m = moist_map[# i,z];
 			//find the height of the square to draw it the right color
 			if(h>30) draw_set_color(c_white);
 			else if(h>22) draw_set_color(c_gray);
@@ -33,10 +32,6 @@ if init //draw to surface only once for each change
 			else draw_set_color(c_navy);
 			//draw the grid
 			draw_rectangle(xoff+in,yoff+zn,xoff+in+bx,yoff+zn+bx,false);
-			draw_set_color(c_aqua);//add small square to center if there is enough moisture
-			//if(m>10) draw_rectangle(xoff+in+1,yoff+zn+1,xoff+in+bx-1,yoff+zn+bx-1,false);
-			if(m>10)draw_point(xoff+in+bx/2,yoff+zn+bx/2);
-		
 			}
 		}
 
