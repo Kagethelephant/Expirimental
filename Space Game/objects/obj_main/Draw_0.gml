@@ -17,14 +17,12 @@ for(i=-2*spr_h;i<=3*spr_h;i+=spr_h)
 draw_set_color(c_aqua);
 draw_sprite_ext(spr_player,0,x,y,1,1,player_rot,c_white,1);
 
-draw_circle(mouse_x,mouse_y,6,0);
+//draw_circle(mouse_x,mouse_y,6,0);
 surface_set_target(surf_gui);
 draw_clear_alpha(c_white,0);
 draw_set_color(c_white);
-draw_text(5,20*1,player_vspd);
-draw_text(5,20*2,player_hspd);
-draw_text(5,20*3,y);
-draw_text(5,20*4,x);
+draw_text(5,20*1,"Game Time: " + string(timer_global));
+
 surface_reset_target();
 draw_surface(surf_gui,x_view-w_view/2,y_view-h_view/2);
 

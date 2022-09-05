@@ -1,4 +1,5 @@
 if(keyboard_check(vk_escape)) game_end();
+if(keyboard_check(vk_enter)) game_restart();
 
 timer_global += 1;
 
@@ -39,5 +40,3 @@ if(keyboard_check_pressed(vk_space))
 	laser.dir = player_rot;
 	laser.v = 10+player_spd;
 	}
-
-for(

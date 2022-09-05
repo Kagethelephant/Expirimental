@@ -7,6 +7,7 @@
     {"id":{"name":"spr_laser","path":"sprites/spr_laser/spr_laser.yy",},"order":2,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":1,},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"order":2,},
+    {"id":{"name":"scr_ds","path":"scripts/scr_ds/scr_ds.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

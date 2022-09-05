@@ -13,7 +13,7 @@ player_rot = 90;
 
 x_view = x;
 y_view = y;
-view_accel = .02;
+view_accel = .03;
 
 rot_spd = 0;
 player_spd = 0;
@@ -28,6 +28,8 @@ v_accel_c = .05;
 
 rot_spd_max = 2;
 v_spd_max = 12;
+
+instance_create_layer(x,y,"bullets", obj_npc);
 
 surf_gui = surface_create(w_view,h_view);
 
